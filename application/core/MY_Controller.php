@@ -128,9 +128,9 @@ class MY_Controller extends CI_Controller {
         $config = Array(
             'protocol' => 'smtp',
             'smtp_host' => 'smtp.googlemail.com',
-            'smtp_port' => 465,
-            'smtp_user' => 'trinityemailer@gmail.com',
-            'smtp_pass' => 'trinity@1963',
+            'smtp_port' => 587,
+            'smtp_user' => 'cfgalarpe@gmail.com',
+            'smtp_pass' => 'f(x)0905',
             'mailtype' => 'html',
             'charset' => 'iso-8859-1',
             'starttls'  => TRUE,
@@ -141,10 +141,10 @@ class MY_Controller extends CI_Controller {
         $this->email->set_header('MIME-Version', '1.0; charset=utf-8');
         $this->email->set_header('Content-type', 'text/html');
         
-        $fromEmail = "trinityemailer@gmail.com"; 
+        $fromEmail = "cfgalarpe@gmail.com"; 
   
   
-        $this->email->from($fromEmail, 'Randy Lagdaan'); 
+        $this->email->from($fromEmail, 'Charlotte Galarpe'); 
         $this->email->to($toEmail);
         $this->email->subject($subject); 
         $this->email->message($message); 
